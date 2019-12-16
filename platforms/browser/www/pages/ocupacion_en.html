@@ -1,0 +1,65 @@
+<template>
+  <div class="page">
+           <!-- Page, data-name contains page name which can be used in page callbacks -->
+           <div class="page" data-name="home">
+              <div class="toolbar tabbar-labels toolbar-bottom-md">
+                  <div class="toolbar-inner">
+                    <a href="/ingles/" class="tab-link ">
+                      <i class="icon f7-icons ios-only">bookmark</i>
+                      <i class="icon f7-icons ios-only icon-ios-fill">bookmark_fill</i>
+                      <i class="icon material-icons md-only">bookmark</i>
+                      <span class="tabbar-label">Information</span>
+                    </a>
+                    <a href="/llegar_en/" class="tab-link">
+                      <i class="icon f7-icons ios-only">compass</i>
+                      <i class="icon f7-icons ios-only icon-ios-fill">compass_fill</i>
+                      <i class="icon material-icons md-only">explore</i>
+                      <span class="tabbar-label">Getting here</span>
+                    </a>
+                    <a href="/settings_en/" class="tab-link tab-link-active">
+                      <i class="icon f7-icons ios-only">favorites</i>
+                      <i class="icon f7-icons ios-only icon-ios-fill">favorites_fill</i>
+                      <i class="icon material-icons md-only">toc</i>
+                      <span class="tabbar-label">Occupation</span>
+                    </a>
+                  </div>
+                </div>
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="title">Occupation of the Wineries</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block block-strong">
+In this section you can check the occupancy status of the wineries.
+        <a class="actualizar-estado" @click="$root.recargarOcupacion()">Update status</a>
+      </div>
+      <div id="recarga-ocupacion" class="block lista-ocupacion">
+        <ul>
+          {{#each bodegas}}
+            <li><strong class="nombre-ocupacion">{{nombre}}:</strong> <span class="uva-{{ocupacion}}"></span></li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="leyenda-ocupacion">
+        <p class="titulo-leyenda">Winerie occupancy percentage:</p>
+        <ul>
+            <li>25% = <span class="uva-1"></span></li>
+            <li>50% = <span class="uva-2"></span></li>
+            <li>75% = <span class="uva-3"></span></li>
+            <li>Full = <span class="uva-4"></span></li>
+        </ul>
+        
+      </div>
+      
+    </div>
+  </div>
+
+
+</template>
+<script>
+  function recargarEstado() {
+    alert('ha recargado');
+  }
+  return {}
+</script>

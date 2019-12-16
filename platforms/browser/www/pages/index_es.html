@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>La Cata del Barrio de la Estación</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="fonts/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Views/Tabs container -->
+    <div class="views tabs ios-edges">
+      <!-- Tabbar for switching views-tabs -->
+     
+      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+      <div id="view-home" class="view view-main tab tab-active">
+  
+        <!-- Page, data-name contains page name which can be used in page callbacks -->
+        <div class="page" data-name="home">
+            <div class="toolbar tabbar-labels toolbar-bottom-md">
+                <div class="toolbar-inner">
+                  <a href="#view-home" class="tab-link tab-link-active">
+                    <i class="icon f7-icons ios-only">bookmark</i>
+                    <i class="icon f7-icons ios-only icon-ios-fill">bookmark_fill</i>
+                    <i class="icon material-icons md-only">bookmark</i>
+                    <span class="tabbar-label">Información</span>
+                  </a>
+                  <a href="/llegar/" class="tab-link">
+                    <i class="icon f7-icons ios-only">compass</i>
+                    <i class="icon f7-icons ios-only icon-ios-fill">compass_fill</i>
+                    <i class="icon material-icons md-only">explore</i>
+                    <span class="tabbar-label">Cómo llegar</span>
+                  </a>
+                  <a href="/settings/" class="tab-link">
+                    <i class="icon f7-icons ios-only">favorites</i>
+                    <i class="icon f7-icons ios-only icon-ios-fill">favorites_fill</i>
+                    <i class="icon material-icons md-only">toc</i>
+                    <span class="tabbar-label">Ocupación</span>
+                  </a>
+                </div>
+              </div>
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title sliding">La Cata del Barrio de la Estación</div>
+              <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="right">
+                  <i class="icon f7-icons ios-only">menu</i>
+                  <i class="icon f7-icons ios-only icon-ios-fill">menu</i>
+                  <i class="icon material-icons">menu</i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div>
+              <div class="centrado img-ppal"><img src="img/portada_app.jpg" alt=""></div>
+            </div>
+
+            <div>
+              <p class="centrado">El Barrio de la Estación de Haro (La Rioja, España) es un lugar único con más de 150 años de historia.
+                  Un barrio donde se han elaborado grandes vinos desde mitad del S. XIX hasta pleno S. XXI,
+                  conservando su esencia, manteniendo su magia.</p>
+              <p class="centrado">Algo muy especial va a ocurrir en el Barrio de la Estación y queremos que nos acompañes…
+                  ¡Sincronicemos nuestros relojes!</p>
+              <p class="centrado">Próxima parada: <strong>Barrio de la Estación de Haro.</strong></p>
+            </div>
+
+            <div>
+              <div class="centrado img-ppal"><img src="img/fotos_home_2017.png" alt=""></div>
+            </div>
+
+            <div class="block-title">El Barrio de la Estación</div>
+            <div>
+              <p class="centrado">El Barrio de la Estación es un lugar emblemático de la ciudad de Haro, un enclave que presenta la mayor concentración de bodegas centenarias del mundo y cuya construcción fue en torno a un eje central y común: la estación de ferrocarril. De ahí que se le conozca como la milla de oro del vino de Rioja.</p>
+              <p class="centrado">Pero que los vecinos del barrio sean bodegas centenarias no quiere decir que sean antiguas, pues las bodegas son construcciones que nunca están terminadas, generación tras generación evolucionan y consiguen mezclar su parte más clásica, la más antigua, con la arquitectura más moderna.</p>
+              <p class="centrado">De este modo, una visita al Barrio de la Estación de Haro se convierte en un viaje por el tiempo, donde se puede seguir la evolución del vino y la arquitectura del último siglo.</p>
+            </div>
+            <div class="list cata-list">
+              <ul>
+                <li>
+                  <a href="/historia/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">HISTORIA</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                    <a href="/bodegas/" class="item-content item-link">
+                      <div class="item-inner">
+                        <div class="item-title">BODEGAS</div>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+
+            <div class="block-title">Información Útil</div>
+            <div class="list cata-list">
+              <ul>
+                <li>
+                  <a href="https://entradium.com/events/la-cata-del-barrio-de-la-estacion" target="_system" class="external item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">COMPRAR ENTRADAS</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                    <a href="/dormir/" class="item-content item-link">
+                      <div class="item-inner">
+                        <div class="item-title">DÓNDE DORMIR</div>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+
+            
+
+            <div class="block-title">Sobre el evento</div>
+            <div class="block">
+              <div class="row">
+                  <a href="#" class="informacion button button-raised button-fill panel-open" data-panel="right">
+                      <div class="item-inner">
+                          <div class="item-title">
+                              <i class="icon f7-icons ios-only">info</i>
+                              <i class="icon material-icons md-only">info</i>
+                             Información</div>
+                        </div>
+                  </a>
+              </div>
+              <div class="row recuerda">
+                <p><strong>Recuerda</strong></p>  
+                <p><em>Los menores de 18 años no podrán acceder a las bodegas aunque, lógicamente, podrán circular libremente por las calles del Barrio. No hay programadas actividades para niños ni servicio de guardería/custodia.</em></p>
+                <p><em>No puede compartirse la entrada ni los tickets de consumición entre varias personas. Cada entrada lleva un código QR único que servirá para validar la reserva.<br />
+                  Todos los asistentes a La Cata del Barrio de La Estación -mayores de 18 años- deben adquirir una entrada, independientemente de si pueden consumir o no alcohol.</em></p>
+              </div>
+            </div>
+              <div class="block-title">Redes Sociales</div>
+            <div class="block">
+                <div class="row hastag">
+                      <a href="https://twitter.com/hashtag/CataEstaci%C3%B3n20?src=hash" class="external" target="_system">#CataEstación20</a>
+                </div>
+              <div class="row redes-sociales">
+                  <div class="col-25">
+                    <a href="https://www.facebook.com/LaCataDelBarrioDeLaEstacion" class="external" target="_system"><i class="fab fa-facebook"></i></a>
+                  </div>
+                  <div class="col-25">
+                    <a href="https://twitter.com/catabarrioest" class="external" target="_system"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="col-25">
+                    <a href="https://www.youtube.com/channel/UCMHFgkdJlAi2FaB7v86yHwg" class="external" target="_system"><i class="fab fa-youtube"></i></a>
+                  </div>
+                  <div class="col-25">
+                    <a href="https://www.instagram.com/catabarrioest/" class="external" target="_system"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+            </div>
+            <div class="block-title peque">Patrocinan</div>
+            <div class="block patrocinios">
+              <div class="row">
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina1.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina2.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina3.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina4.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina5.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina6.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina7.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina8.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina9.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina10.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina11.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-15 desktop-10">
+                    <img src="img/patrocinios/patrocina12.png" alt="">
+                  </div>
+                </div>
+            </div>
+
+            <div class="block-title peque">Colaboran</div>
+            <div class="block patrocinios">
+              <div class="row">
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora1.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora2.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora3.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora4.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora5.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora6.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora7.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora8.png" alt="">
+                  </div>
+                  <div class="col-25 tablet-20 desktop-10">
+                    <img src="img/patrocinios/colabora9.png" alt="">
+                  </div>
+                </div>
+            </div>
+
+            <div class="block-title peque">Apoyan</div>
+            <div class="block patrocinios espaciolow">
+              <div class="row">
+                  <div class="col-25">
+                    <img src="img/patrocinios/apoya1.png" alt="">
+                  </div>
+                  <div class="col-25">
+                    <img src="img/patrocinios/apoya2.png" alt="">
+                  </div>
+                  <div class="col-25">
+                    <img src="img/patrocinios/apoya3.png" alt="">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catalog View -->
+      <div id="view-llegar" class="view tab">
+        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+      </div>
+
+      <!-- Settings View -->
+      <div id="view-settings" class="view tab">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+    </div>
+
+  </div>
+  <!-- Cordova -->
+  <!--
+  <script src="cordova.js"></script>
+  -->
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
