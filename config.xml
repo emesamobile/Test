@@ -1,0 +1,82 @@
+<?xml version='1.15' encoding='utf-8'?>
+<widget id="cata.barrio.estacion" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>[Nueva] La Cata del Barrio de la Estación</name>
+    <description>
+        Toda la información sobre el evento de La Cata del Barrio de la Estación de Haro.
+    </description>
+    <author email="rsainz@emesa.com" href="http://emesasoftware.com">
+        Emesa Software
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+         <icon src="res/icon/icon.png" />
+    </platform>
+    <platform name="ios">
+      <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+      <config-file parent="CFBundleAllowMixedLocalizations" platform="ios" target="*-Info.plist">
+        <true />
+      </config-file>
+      <preference name="StatusBarOverlaysWebView" value="true" />
+        <icon height="180" src="res/ios/icon-60@3x.png" width="180" />
+        <icon height="60" src="res/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/ios/icon-60@2x.png" width="120" />
+        <icon height="76" src="res/ios/icon-76.png" width="76" />
+        <icon height="152" src="res/ios/icon-76@2x.png" width="152" />
+        <icon height="167" src="res/ios/icon-83.5@2x.png" width="167" />
+        <icon height="29" src="res/ios/icon-small.png" width="29" />
+        <icon height="58" src="res/ios/icon-small@2x.png" width="58" />
+        <icon height="87" src="res/ios/icon-small@3x.png" width="87" />
+        <icon height="40" src="res/ios/icon-40.png" width="40" />
+        <icon height="80" src="res/ios/icon-40@2x.png" width="80" />
+        <icon height="120" src="res/ios/icon-40@3x.png" width="120" />
+        <icon height="57" src="res/ios/icon.png" width="57" />
+        <icon height="114" src="res/ios/icon@2x.png" width="114" />
+        <icon height="72" src="res/ios/icon-72.png" width="72" />
+        <icon height="76" src="res/ios/icon-76.png" width="76" />
+        <icon height="1024" src="res/ios/icon-1024.png" width="1024" />
+        <icon height="144" src="res/ios/icon-72@2x.png" width="144" />
+        <icon height="29" src="res/ios/icon-small.png" width="29" />
+        <icon height="58" src="res/ios/icon-small@2x.png" width="58" />
+        <icon height="50" src="res/ios/icon-50.png" width="50" />
+        <icon height="100" src="res/ios/icon-50@2x.png" width="100" />
+        <splash height="480" src="res/ios/splash/Default.png" width="320" />
+        <splash height="960" src="res/ios/splash/Default@2x.png" width="640" />
+        <splash height="1136" src="res/ios/splash/Default-568h@2x.png" width="640" />
+        <splash height="1334" src="res/ios/splash/Default-667h@2x.png" width="750" />
+        <splash height="2208" src="res/ios/splash/Default-Portrait-736h@3x.png" width="1242" />
+        <splash height="1242" src="res/ios/splash/Default-Landscape-736h@3x.png" width="2208" />
+        <splash height="1024" src="res/ios/splash/Default-Portrait.png" width="768" />
+        <splash height="768" src="res/ios/splash/Default-Landscape.png" width="1024" />
+        <splash height="2048" src="res/ios/splash/Default-Portrait@2x.png" width="1536" />
+        <splash height="1536" src="res/ios/splash/Default-Landscape@2x.png" width="2048" />
+    </platform>
+
+
+    <platform name="electron">
+      <preference name="ElectronSettingsFilePath" value="electron-settings.json" />
+      <icon src="res/icon/electron/app.png" target="app" />
+      <icon src="res/icon/electron/installer.png" target="installer" />
+    </platform>
+
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="local" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="Suppresses3DTouchGesture" value="true" />
+    <preference name="Allow3DTouchLinkPreview" value="false" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</widget>
