@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>La Cata del Barrio de la Estación</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="fonts/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div id="app">
+       <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+    <!-- Right panel with reveal effect-->
+    <div class="panel panel-right panel-right-1 panel-resizable panel-reveal panel-init" id="menu-sp">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Más Información</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <ul>
+              <li><a href="/vinos/" data-panel="right" class="panel-close">Vinos</a></li>
+              <li><a href="/gastro/"  data-panel="right" class="panel-close">Gastro</a></li>
+              <li><a href="/programa/" data-panel="right" class="panel-close">Programa</a></li>
+              <li><a href="https://www.youtube.com/channel/UCMHFgkdJlAi2FaB7v86yHwg/videos" class="external" target="_system">Videos</a></li>
+              <li><a href="https://www.flickr.com/photos/lacatadelbarriodelaestacion/albums" class="external" target="_system">Galerías</a></li>
+              <li><a href="/faq/" data-panel="right" class="panel-close">FAQ</a></li>
+              <li><a href="/ingles/" class="panel-close" data-panel="right" data-view=".view-main">🇬🇧 Change Languaje</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-left panel-left-1 panel-resizable panel-reveal panel-init">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">More Information</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <ul>
+              <li><a href="/vinos_en/" class="panel-close">Wines</a></li>
+              <li><a href="/gastro_en/"  class="panel-close">Gastro</a></li>
+              <li><a href="/programa_en/" class="panel-close">Program</a></li>
+              <li><a href="https://www.youtube.com/channel/UCMHFgkdJlAi2FaB7v86yHwg/videos" class="external" target="_system">Videos</a></li>
+              <li><a href="https://www.flickr.com/photos/lacatadelbarriodelaestacion/albums" class="external" target="_system">Galleries</a></li>
+              <li><a href="/faq_en/" class="panel-close">FAQ</a></li>
+              <li><a href="/esp/"  class="panel-close" data-view=".view-main">🇪🇸 Cambiar idioma</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="view view-main"></div>
+    </div>
+  <script src="framework7/js/framework7.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
