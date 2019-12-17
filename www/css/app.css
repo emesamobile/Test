@@ -75,7 +75,6 @@ img {
 .panel-right .page-content,
 .panel-left .page-content {
   background: url('../img/fondob.png');
-  height: 132%;
 }
 
 .panel-right .page-content a,
@@ -706,7 +705,3 @@ h5 {
 .actividad {
   color: #000000;
 }
-/* .page{
-  padding-bottom: 50px;
-  background: url('../img/fondo.png') !important;
-} */
